@@ -1,0 +1,359 @@
+
+/* ---------- General Settings ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #171312;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("2.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+.navbar {
+    width: min(1200px, 94%);
+    min-height: 75px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    min-width: 150px;
+}
+
+.logo {
+    color: #FFBFA1;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    padding-top: 5px;
+}
+
+/* ---------- Navigation Links ---------- */
+
+.menu ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #FFBFA1;
+}
+
+/* ---------- Search Bar ---------- */
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    width: 180px;
+    height: 40px;
+    padding: 10px;
+
+    background: transparent;
+    border: 1px solid #FFBFA1;
+    border-radius: 5px 0 0 5px;
+
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.srch::placeholder {
+    color: #dddddd;
+}
+
+.srch:focus {
+    outline: 1px solid #FFBFA1;
+}
+
+.btn {
+    height: 40px;
+    padding: 0 18px;
+
+    background: #FFBFA1;
+    border: 1px solid #FFBFA1;
+    border-radius: 0 5px 5px 0;
+
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffffff;
+}
+
+/* ---------- Main Content ---------- */
+
+.content {
+    width: min(1200px, 94%);
+    min-height: 600px;
+    margin: auto;
+    padding-top: 105px;
+
+    color: #ffffff;
+    position: relative;
+}
+
+.content h1 {
+    font-family: "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 54px);
+    line-height: 1.15;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.content span {
+    color: #FFBFA1;
+    font-size: 1.12em;
+}
+
+.content .par {
+    margin-bottom: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+/* ---------- Donate Button ---------- */
+
+.content .cn {
+    width: 185px;
+    min-height: 44px;
+
+    background: #FFBFA1;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.content .cn a {
+    display: block;
+    padding: 12px 8px;
+
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.content .cn:hover {
+    background: #ffffff;
+}
+
+/* ---------- Login Panel ---------- */
+
+.form {
+    width: 340px;
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.82);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+.form h2 {
+    width: 100%;
+    padding: 12px 8px;
+    margin-bottom: 15px;
+
+    background: #ffffff;
+    border-radius: 10px;
+
+    color: #FFBFA1;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* ---------- Login Inputs ---------- */
+
+.form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 8px 2px;
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFBFA1;
+
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.form input::placeholder {
+    color: #dddddd;
+}
+
+.form input:focus {
+    outline: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* ---------- Login Button ---------- */
+
+.btnn {
+    width: 100%;
+    height: 44px;
+    margin-top: 25px;
+
+    background: #FF7200;
+    border: none;
+    border-radius: 10px;
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btnn:hover {
+    background: #ffffff;
+}
+
+/* ---------- Sign Up Text ---------- */
+
+.form .link {
+    margin-top: 22px;
+
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.form .link a {
+    color: #FF7200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form .link a:hover {
+    color: #FFBFA1;
+}
+
+.liw {
+    margin-top: 20px;
+    color: #dddddd;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 1050px) {
+    .navbar {
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .icon {
+        text-align: center;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .content {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    .form {
+        position: static;
+        margin: 50px 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu ul {
+        gap: 14px;
+    }
+
+    .menu ul li a {
+        font-size: 12px;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .srch {
+        width: 70%;
+    }
+
+    .content {
+        padding-top: 40px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content .par {
+        font-size: 14px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 340px;
+        padding: 25px;
+        margin-top: 40px;
+    }
+}

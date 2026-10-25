@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Share What You Can</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+
+            <div class="icon">
+                <h2 class="logo">LifeLink</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    
+                    <li><a href="donate.php">DONATE</a></li>
+                    <li><a href="receive.php">RECEIVE</a></li>
+                    
+                    <li><a href="login.php?redirect=my_donations.php">MY INFO</a></li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <form class="search" action="receive.php" method="GET">
+                <input
+                    class="srch"
+                    type="search"
+                    name="search"
+                    placeholder="Find resources..."
+                    aria-label="Search resources"
+                >
+                <button class="btn" type="submit">Search</button>
+            </form>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <h1>
+                Share What You Can<br>
+                <span>Help Someone</span><br>
+                Today
+            </h1>
+
+            <p class="par">
+                Connect with people who have resources to share.<br>
+                Find what you need and contact donors directly.
+            </p>
+
+            <button class="cn">
+                <a href="donate.php">START DONATING</a>
+            </button>
+
+            <!-- Login Form -->
+            <div class="form">
+
+                <h2>Login Here</h2>
+
+                <form action="login.php" method="POST">
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Email Here"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Enter Password Here"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button class="btnn" type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="link">
+                    Don't have an account?<br>
+                    <a href="register.php">Sign up here</a>
+                </p>
+
+                <p class="liw">
+                    Share resources. Change lives.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
