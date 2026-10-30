@@ -23,7 +23,7 @@ $category = "";
 $description = "";
 $location = "";
 
-// Retrieve only a donation owned by the logged-in user
+//only donation put by the logged user
 $stmt = $conn->prepare(
     "SELECT item_name, category, description, location
      FROM donations
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } elseif (strlen($description) > 10000) {
         $message = "The description is too long.";
     } else {
-        // Update only if the donation belongs to this user
+        // Update only if donation belongs to now online user
         $stmt = $conn->prepare(
             "UPDATE donations
              SET item_name = ?, category = ?, description = ?, location = ?
