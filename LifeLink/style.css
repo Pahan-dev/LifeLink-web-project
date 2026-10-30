@@ -1,6 +1,3 @@
-
-/* ---------- General Settings ---------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -29,8 +26,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ---------- Navigation Bar ---------- */
-
+/*Navigation*/
 .navbar {
     width: min(1200px, 94%);
     min-height: 75px;
@@ -54,8 +50,7 @@ body {
     padding-top: 5px;
 }
 
-/* ---------- Navigation Links ---------- */
-
+/*Navigation Links*/
 .menu ul {
     list-style: none;
 
@@ -77,7 +72,7 @@ body {
     color: #FFBFA1;
 }
 
-/* ---------- Search Bar ---------- */
+/*Search Bar*/
 
 .search {
     display: flex;
@@ -123,7 +118,7 @@ body {
     background: #ffffff;
 }
 
-/* ---------- Main Content ---------- */
+
 
 .content {
     width: min(1200px, 94%);
@@ -157,7 +152,7 @@ body {
     line-height: 1.8;
 }
 
-/* ---------- Donate Button ---------- */
+/*Donate Btn*/
 
 .content .cn {
     width: 185px;
@@ -185,13 +180,12 @@ body {
     background: #ffffff;
 }
 
-/* ---------- Login Panel ---------- */
-
+/*Login square*/
 .form {
     width: 340px;
     padding: 30px;
 
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(215, 215, 215, 0.348);
     border-radius: 15px;
 
     position: absolute;
@@ -204,17 +198,16 @@ body {
     padding: 12px 8px;
     margin-bottom: 15px;
 
-    background: #ffffff;
+    background: #FFBFA1;
     border-radius: 10px;
 
-    color: #FFBFA1;
+    color: #000000;
     font-family: Arial, sans-serif;
     font-size: 22px;
     text-align: center;
 }
 
-/* ---------- Login Inputs ---------- */
-
+/*Login Input*/
 .form input {
     width: 100%;
     height: 40px;
@@ -238,14 +231,13 @@ body {
     border-bottom: 2px solid #ffffff;
 }
 
-/* ---------- Login Button ---------- */
-
+/*Login Btn*/
 .btnn {
     width: 100%;
     height: 44px;
     margin-top: 25px;
 
-    background: #FF7200;
+    background: #D97757;
     border: none;
     border-radius: 10px;
 
@@ -260,8 +252,7 @@ body {
     background: #ffffff;
 }
 
-/* ---------- Sign Up Text ---------- */
-
+/*Sign Up*/
 .form .link {
     margin-top: 22px;
 
@@ -287,8 +278,7 @@ body {
     text-align: center;
 }
 
-/* ---------- Responsive Design ---------- */
-
+/*Responsive*/
 @media (max-width: 1050px) {
     .navbar {
         justify-content: center;
